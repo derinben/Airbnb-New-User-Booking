@@ -7,12 +7,14 @@ With this, Airbnb could potentially
 - Provide personalized experience
 - Better forecast demand
 
+
 ### Dataset 
 
 The problem statement and dataset is derived from [Kaggle's - Airbnb New User Bookings Challenge](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings). 
 The predictor variables include information about the users (user_id, age, gender etc.) and preliminary session data (actions, action types, session time etc.). 
 Our objective would be to predict the country (dependent variable) that the user is most likely to visit.
 It is to be noted that only a limited set of users have associated session data and therefore, we merge (inner join) the datasets and proceed for modelling with about 5.5 mil session observations for close to 73k users. 
+
 
 ### Methodology 
 
@@ -28,7 +30,7 @@ Some challenges in this dataset is handling the imbalanced dataset and limited i
 <img src = https://user-images.githubusercontent.com/42509638/203994541-a5cf65c2-d3a6-4b57-ba3e-d23c0262557c.png width=700>
 
 #### Features that indicated lower likelihood of making a booking
-![image](https://user-images.githubusercontent.com/42509638/203994591-cb4179bc-a2bc-4f9d-ab07-66f59ba56042.png)
+<img src = https://user-images.githubusercontent.com/42509638/203994591-cb4179bc-a2bc-4f9d-ab07-66f59ba56042.png width=700>
 
 
 # Modelling
@@ -42,9 +44,10 @@ Decision Trees - highly predictive due to their capability of mapping non-linear
 
 XGboost - Allows us to leverage its regularization technique (using both L1 and L2), sparsity awareness (robust learning from missing values) and in-built cross validation. 
 
-![image](https://user-images.githubusercontent.com/42509638/203993655-aaac4f59-9163-4483-8b66-a1d0d95cce2d.png)
+<img src = https://user-images.githubusercontent.com/42509638/203993655-aaac4f59-9163-4483-8b66-a1d0d95cce2d.png width = 700> 
 
 Consequently, Xboost gave the best performance of a NDCG score of 88.323. 
+
 
 ## For further improvements
 

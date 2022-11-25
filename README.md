@@ -2,15 +2,16 @@
 
 ## Summary
 
-In this project, we try to predict the booking destination of a newly onboarded user on Airbnb platform. The predictors used in this project are only the
-listing titles. To evaluate the model's performance, we used NDCG as the metric to improve the degree of relevance and the ranking of the predictions we make. 
+In this project, we try to predict the booking destination of a newly onboarded user on Airbnb platform. To evaluate the model's performance, we used NDCG as the metric to improve the degree of relevance and the ranking of the predictions we make. 
 With this, Airbnb could potentially 
 - Provide personalized experience
 - Better forecast demand
 
 ### Dataset 
 
-The problem statement and dataset is derived from [Kaggle's - Airbnb New User Bookings Challenge](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings). The predictor variables include information about the users (user_id, age, gender etc.) and preliminary session data (actions, action types, session time etc.). Our objective would be to predict the country (dependent variable) that the user is most likely to visit.
+The problem statement and dataset is derived from [Kaggle's - Airbnb New User Bookings Challenge](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings). 
+The predictor variables include information about the users (user_id, age, gender etc.) and preliminary session data (actions, action types, session time etc.). 
+Our objective would be to predict the country (dependent variable) that the user is most likely to visit.
 It is to be noted that only a limited set of users have associated session data and therefore, we merge (inner join) the datasets and proceed for modelling with about 5.5 mil session observations for close to 73k users. 
 
 ### Methodology 
@@ -30,7 +31,7 @@ Some challenges in this dataset is handling the imbalanced dataset and limited i
 ![image](https://user-images.githubusercontent.com/42509638/203994591-cb4179bc-a2bc-4f9d-ab07-66f59ba56042.png)
 
 
-### Model
+# Modelling
 
 The models we try out are as follows:
 Multinomial regression - using Softmax function and L2 regularization applied to help with classifying our target variables beyond the two categories where we apply logistic regression.
@@ -44,3 +45,9 @@ XGboost - Allows us to leverage its regularization technique (using both L1 and 
 ![image](https://user-images.githubusercontent.com/42509638/203993655-aaac4f59-9163-4483-8b66-a1d0d95cce2d.png)
 
 Consequently, Xboost gave the best performance of a NDCG score of 88.323. 
+
+## For further improvements
+
+- Airbnb can consider data on detailed user demographics, as well as sessions' data (e.g., session time and data, search queries, etc.)
+- Work with relevant stakeholders to further refine feature selection. 
+- We can cansider Novelty as a metric for recommending new travel destinations to users 

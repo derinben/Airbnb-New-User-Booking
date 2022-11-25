@@ -25,7 +25,7 @@ Some challenges in this dataset is handling the imbalanced dataset and limited i
 <img src = https://user-images.githubusercontent.com/42509638/203994464-830d6531-a790-498d-b73c-1dd2cab48c7e.png width = 700>
 
 #### Features that indicated higher likelihood of even making a booking in the first place 
-![image](https://user-images.githubusercontent.com/42509638/203994541-a5cf65c2-d3a6-4b57-ba3e-d23c0262557c.png)
+<img src = https://user-images.githubusercontent.com/42509638/203994541-a5cf65c2-d3a6-4b57-ba3e-d23c0262557c.png width=700>
 
 #### Features that indicated lower likelihood of making a booking
 ![image](https://user-images.githubusercontent.com/42509638/203994591-cb4179bc-a2bc-4f9d-ab07-66f59ba56042.png)

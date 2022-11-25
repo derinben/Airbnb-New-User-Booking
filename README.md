@@ -44,7 +44,7 @@ Decision Trees - highly predictive due to their capability of mapping non-linear
 
 XGboost - Allows us to leverage its regularization technique (using both L1 and L2), sparsity awareness (robust learning from missing values) and in-built cross validation. 
 
-<img src = https://user-images.githubusercontent.com/42509638/203993655-aaac4f59-9163-4483-8b66-a1d0d95cce2d.png width = 700> 
+<img src = https://user-images.githubusercontent.com/42509638/203993655-aaac4f59-9163-4483-8b66-a1d0d95cce2d.png width = 500> 
 
 Consequently, Xboost gave the best performance of a NDCG score of 88.323. 
 

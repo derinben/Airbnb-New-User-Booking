@@ -21,14 +21,13 @@ Some amount of EDA was done to understand the dataset which can be found here.
 Some challenges in this dataset is handling the imbalanced dataset and limited information available.
 
 #### Peek into feature engineering and selection that improved the results to a great extent
-![image](https://user-images.githubusercontent.com/42509638/203993760-b11f8419-391d-4359-acd0-061223fb5475.png)
+![image](https://user-images.githubusercontent.com/42509638/203994464-830d6531-a790-498d-b73c-1dd2cab48c7e.png)
 
 ##### Features that indicated higher likelihood of even making a booking in the first place 
-![image](https://user-images.githubusercontent.com/42509638/203994091-ed9e5795-a80c-40ce-83cf-ab14a723e787.png)
+![image](https://user-images.githubusercontent.com/42509638/203994541-a5cf65c2-d3a6-4b57-ba3e-d23c0262557c.png)
 
 ##### Features that indicated lower likelihood of making a booking
-![image](https://user-images.githubusercontent.com/42509638/203994168-5fb41f61-a7ed-4a06-a372-e68f916c8fb6.png)
-
+![image](https://user-images.githubusercontent.com/42509638/203994591-cb4179bc-a2bc-4f9d-ab07-66f59ba56042.png)
 
 
 ### Model
